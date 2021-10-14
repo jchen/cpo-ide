@@ -1,0 +1,26 @@
+.code-error {
+    color: red !important;
+    text-decoration: underline !important;
+}
+
+.tooltippable .tooltip {
+    visibility: hidden;
+    max-width: 60%;
+    background-color: black;
+    opacity: 0.8;
+    color: #fff;
+    text-align: left;
+    border-radius: 5px;
+    padding: 7px 7px;
+    
+    bottom: 100%;
+    margin-left: 0px;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 9999;
+  }
+
+.tooltippable:hover .tooltip {
+    visibility: visible;
+}

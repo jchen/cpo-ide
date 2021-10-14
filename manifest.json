@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "CPO IDE",
+    "version": "0.01",
+    "description": "Adds some very basic IDE features to CPO and Examplar. Currently highlights some bad syntax, and shows function tooltips on hover.",
+    "content_scripts": [
+      {
+        "css": [
+          "extension-styles.css"
+        ],
+        "js": [
+          "extension-content.js"
+        ],
+        "matches": [
+          "https://code.pyret.org/editor*", 
+          "https://pyret.cs.brown.edu/assignment/*"
+        ]
+      }
+    ],
+    "icons": { 
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+       "128": "icons/icon128.png" }
+  }
+  
